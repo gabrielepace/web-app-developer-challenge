@@ -4,6 +4,7 @@ import { makeStyles } from '@mui/styles';
 import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
 import Typography from "@mui/material/Typography";
+import Navbar from './Navbar';
 
 import './Login.css';
 
@@ -24,8 +25,6 @@ const useStyles = makeStyles(theme => ({
     },
   },
 }));
-
-
 
 async function loginUser(credentials) {
   return fetch('http://localhost:8080/login', {
@@ -55,6 +54,7 @@ export default function Login({ setToken }) {
 
   return(
     <div className="login-wrapper">
+      <Navbar />
         <Typography component="h1" variant="h1 bold">
           Login
         </Typography>

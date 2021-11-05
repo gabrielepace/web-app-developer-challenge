@@ -8,7 +8,7 @@ This Challenge is divided into four different use-cases:
 
 **Use Case 1:** User Login
 
-**Use Case 2:** Start Wars resources overview
+**Use Case 2:** Star Wars resources overview
 
 **Use Case 3:** Resource search
 
@@ -38,6 +38,10 @@ Bonus: The user can refresh the page without being logged out.
 ### Use Case 2: As a user I can see an overview over all Star Wars resources
 
 Show a an overview over all Star Wars resources like people, films, star ships and so on. The user can filter between the different resources.
+
+### Use Case 3: As a user I can search for a specific resource
+
+Add a search input to search for a Star Wars resource.
 
 ### Use Case 4: As a user I can navigate to a resource detail page
 
