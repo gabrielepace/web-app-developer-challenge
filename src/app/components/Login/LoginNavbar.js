@@ -4,7 +4,7 @@ import AppBar from '@mui/material/AppBar';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 
-export default function Navbar() {
+export default function LoginNavbar() {
   return (
     <AppBar position="fixed" color="primary" sx={{ top: 0, left: 0 }}>
         <Toolbar>

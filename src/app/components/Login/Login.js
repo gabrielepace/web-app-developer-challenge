@@ -4,24 +4,19 @@ import { makeStyles } from '@mui/styles';
 import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
 import Typography from "@mui/material/Typography";
-import Navbar from './Navbar';
+import LoginNavbar from './LoginNavbar';
 
-import './Login.css';
+import '../../styles/Login.css';
 
 const useStyles = makeStyles(theme => ({
-  root: {
+  login: {
     display: 'flex',
     flexDirection: 'column',
     justifyContent: 'center',
     alignItems: 'center',
-    padding: "",
 
     '& .MuiTextField-root': {
-      margin: "",
       width: '300px',
-    },
-    '& .MuiButtonBase-root': {
-      margin: "",
     },
   },
 }));
@@ -54,12 +49,12 @@ export default function Login({ setToken }) {
 
   return(
     <div className="login-wrapper">
-      <Navbar />
+      <LoginNavbar />
         <Typography component="h1" variant="h1 bold">
           Login
         </Typography>
         <br />
-      <form className={classes.root} onSubmit={handleSubmit}>
+      <form className={classes.login} onSubmit={handleSubmit}>
         <TextField
           label="Username"
           variant="filled"
@@ -68,7 +63,6 @@ export default function Login({ setToken }) {
           value={username}
           onChange={e => setUserName(e.target.value)}
         />
-        <br />
         <br />
         <TextField
           label="Password"
