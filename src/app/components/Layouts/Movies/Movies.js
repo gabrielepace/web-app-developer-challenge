@@ -148,14 +148,14 @@ const Movies = ({ match }) => {
       <Typography variant="h5" component="h2" className={classes.title}>
         Films
       </Typography>
-      {/* <List>
+      {<List>
         {moviesData &&
           moviesData.map(movie => (
             <ListItem key={movie.episode_id} className={classes.listItem}>
               <Link
                 component={RouteLink}
                 className={classes.link}
-                to={`${match.url}/${movie.url.slice(
+                to={movie =>`${match.url}/${movie.url.slice(
                   movie.url.indexOf("films") + "films".length + 1,
                   movie.url.length - 1
                 )}`}
@@ -164,7 +164,7 @@ const Movies = ({ match }) => {
               </Link>
             </ListItem>
           ))}
-      </List> */}
+      </List>}
     </Paper>
   );
 
@@ -172,12 +172,12 @@ const Movies = ({ match }) => {
     <Searching />
   ) : searchTerm !== "" ? (
     <Paper className={classes.paperMovies}>
-      {/* {results.map(result => (
+       {results.map(result => (
         <ListItem key={result.title} className={classes.listItem}>
           <Link
             component={RouteLink}
             className={classes.link}
-            to={`${match.url}/${result.url.slice(
+            to={result => `${match.url}/${result.url.slice(
               result.url.indexOf("films") + "films".length + 1,
               result.url.length - 1
             )}`}
@@ -185,7 +185,7 @@ const Movies = ({ match }) => {
             {result.title}
           </Link>
         </ListItem>
-      ))} */}
+      ))}
     </Paper>
   ) : (
     movies

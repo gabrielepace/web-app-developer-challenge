@@ -136,13 +136,13 @@ const Characters = ({ match }) => {
         People
       </Typography>
       <List>
-        {/* {charactersData &&
+        {charactersData &&
           charactersData.map(character => (
             <ListItem key={character.name} className={classes.listItem}>
               <Link
                 component={RouteLink}
                 className={classes.link}
-                to={`${match.url}/${character.url.slice(
+                to={character => `${match.url}/${character.url.slice(
                   character.url.indexOf("people") + "people".length + 1,
                   character.url.length - 1
                 )}`}
@@ -150,7 +150,7 @@ const Characters = ({ match }) => {
                 {character.name}
               </Link>
             </ListItem>
-          ))} */}
+          ))} 
       </List>
     </Paper>
   );
@@ -158,12 +158,12 @@ const Characters = ({ match }) => {
   const searchingCharacters = (
     <Paper className={classes.paperCharacters}>
       <List>
-        {/* {searchResults.map(search => (
+        {searchResults.map(search => (
           <ListItem key={search.name} className={classes.listItem}>
             <Link
               component={RouteLink}
               className={classes.link}
-              to={`${match.url}/${search.url.slice(
+              to={search => `${match.url}/${search.url.slice(
                 search.url.indexOf("people") + "people".length + 1,
                 search.url.length - 1
               )}`}
@@ -171,7 +171,7 @@ const Characters = ({ match }) => {
               {search.name}
             </Link>
           </ListItem>
-        ))} */}
+        ))}
       </List>
     </Paper>
   );
