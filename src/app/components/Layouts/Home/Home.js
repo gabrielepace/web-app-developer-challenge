@@ -1,11 +1,10 @@
 import React from "react";
 import { Link as RouteLink } from "react-router-dom";
-import Typography from "@mui/material/Typography";
 import Container from "@mui/material/Container";
 import { withStyles, makeStyles } from "@mui/styles";
 import Button from "@mui/material/Button";
 import Link from "@mui/material/Link";
-import LoginNavbar from "../../Login/LoginNavbar"
+import LoginNavbar from "../../Login/LoginNavbar";
 
 const useStyles = makeStyles(theme => ({
   home: {
@@ -46,16 +45,27 @@ const ButtonHome = withStyles(theme => ({
   }
 }))(Button);
 
+function logout(){
+  window.localStorage.removeItem("token");
+  window.location.reload();
+  return false
+}
+
 function Home() {
   const classes = useStyles();
 
   return (
-    
     <Container className={classes.home}>
-      <LoginNavbar />
-      <Typography variant="h3" component="h1" className={classes.title}>
-        Star Wars
-      </Typography>
+      <LoginNavbar/>
+      <br/>
+      <br/>
+      <br/>
+      <Link
+        component="button"
+        variant="body2"
+        onClick={logout}>
+        Logout
+      </Link>        
       <Container className={classes.categories}>
         <ButtonHome variant="outlined">
           <Link to="/films" component={RouteLink} className={classes.link}>
