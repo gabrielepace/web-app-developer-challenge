@@ -5,8 +5,11 @@ import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
 import Typography from "@mui/material/Typography";
 import LoginNavbar from './LoginNavbar';
+import ip from 'ip';
 
 import '../../styles/Login.css';
+
+ip = require("ip");
 
 const useStyles = makeStyles(theme => ({
   login: {
@@ -22,7 +25,7 @@ const useStyles = makeStyles(theme => ({
 }));
 
 async function loginUser(credentials) {
-  return fetch('http://localhost:8080/login', {
+  return fetch(`http://${ip.address()}:8080/login`, {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json'
