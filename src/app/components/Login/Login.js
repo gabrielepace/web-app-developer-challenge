@@ -5,11 +5,10 @@ import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
 import Typography from "@mui/material/Typography";
 import LoginNavbar from './LoginNavbar';
-import ip from 'ip';
 
 import '../../styles/Login.css';
 
-ip = require("ip");
+var ip = require("ip");
 
 const useStyles = makeStyles(theme => ({
   login: {

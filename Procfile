@@ -1,1 +1,1 @@
-web: node server.js & wait -n; npm start; wait
+web: npm start & wait -n; npm start; wait
