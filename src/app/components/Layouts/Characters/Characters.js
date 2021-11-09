@@ -142,7 +142,7 @@ const Characters = ({ match }) => {
               <Link
                 component={RouteLink}
                 className={classes.link}
-                to={character => `${match.url}/${character.url.slice(
+                to={`${match.url}/${character.url.slice(
                   character.url.indexOf("people") + "people".length + 1,
                   character.url.length - 1
                 )}`}
@@ -161,12 +161,13 @@ const Characters = ({ match }) => {
         {searchResults.map(search => (
           <ListItem key={search.name} className={classes.listItem}>
             <Link
+            to={`${match.url}/${search.url.slice(
+              search.url.indexOf("people") + "people".length + 1,
+              search.url.length - 1
+            )}`}
               component={RouteLink}
               className={classes.link}
-              to={search => `${match.url}/${search.url.slice(
-                search.url.indexOf("people") + "people".length + 1,
-                search.url.length - 1
-              )}`}
+              
             >
               {search.name}
             </Link>
@@ -191,7 +192,7 @@ const Characters = ({ match }) => {
         <InputBase
           className={classes.search}
           placeholder="Search"
-          inputProps={{ "aria-label": "Buscar" }}
+          inputProps={{ "aria-label": "Search" }}
           onChange={e => setSearchTerm(e.target.value)}
         />
         <IconButton className={classes.iconButton} aria-label="Search">

@@ -1,6 +1,6 @@
 import React from "react";
 import { Provider } from "react-redux";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { BrowserRouter as Router, Route } from "react-router-dom";
 import store from "../globalStore/store/store";
 import Login from './Login/Login';
 import useToken from '../components/Login/useToken';
@@ -25,18 +25,16 @@ function App() {
     <Provider store={store}>
       <Router>
         <React.Fragment>
-          <Routes>
-          <Route exact path="/" element={<Home />} />
-          <Route exact path="/login" element={<Login />} />
-          <Route exact path="/films" element={<Movies />} />
-          <Route exact path="/people" element={<Characters />} />
-          <Route exact path="/films/:id" element={<DetailsMovie />} />
-          <Route exact path="/people/:id" element={<DetailsCharacter />} />
-          <Route exact path="/planets/:id" element={<DetailsPlanet />} />
-          <Route exact path="/starships/:id" element={<DetailsStarship />} />
-          <Route exact path="/vehicles/:id" element={<DetailsVehicle />} />
-          <Route exact path="/species/:id" element={<DetailsSpecie />} />
-          </Routes>
+          <Route exact path="/" component={Home} />
+          <Route exact path="/login" component={Login} />
+          <Route exact path="/films" component={Movies} />
+          <Route exact path="/people" component={Characters} />
+          <Route exact path="/films/:id" component={DetailsMovie} />
+          <Route exact path="/people/:id" component={DetailsCharacter} />
+          <Route exact path="/planets/:id" component={DetailsPlanet} />
+          <Route exact path="/starships/:id" component={DetailsStarship} />
+          <Route exact path="/vehicles/:id" component={DetailsVehicle} />
+          <Route exact path="/species/:id" component={DetailsSpecie} />
         </React.Fragment>
       </Router>
     </Provider>

@@ -155,7 +155,7 @@ const Movies = ({ match }) => {
               <Link
                 component={RouteLink}
                 className={classes.link}
-                to={movie =>`${match.url}/${movie.url.slice(
+                to={`${match.url}/${movie.url.slice(
                   movie.url.indexOf("films") + "films".length + 1,
                   movie.url.length - 1
                 )}`}
@@ -177,7 +177,7 @@ const Movies = ({ match }) => {
           <Link
             component={RouteLink}
             className={classes.link}
-            to={result => `${match.url}/${result.url.slice(
+            to={`${match.url}/${result.url.slice(
               result.url.indexOf("films") + "films".length + 1,
               result.url.length - 1
             )}`}
@@ -198,7 +198,7 @@ const Movies = ({ match }) => {
         <InputBase
           className={classes.search}
           placeholder="Search"
-          inputProps={{ "aria-label": "Buscar" }}
+          inputProps={{ "aria-label": "Search" }}
           onChange={e => setSearchTerm(e.target.value)}
         />
         <IconButton className={classes.iconButton} aria-label="Search">
