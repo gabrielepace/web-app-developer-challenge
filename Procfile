@@ -1,1 +1,1 @@
-web: npm start & node server.js & ifconfig
+web: npm start & node server.js

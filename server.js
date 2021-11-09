@@ -10,6 +10,8 @@ app.use('/login', (req, res) => {
     });
 });
 
+var ip = require("ip");
+
 const PORT = process.env.PORT || 8080;
 
-app.listen(PORT, () => console.log(`API is running on http://localhost:${PORT}/login`));
+app.listen(PORT, () => console.log(`API is running on http://${ip.address()}:${PORT}/login`));
