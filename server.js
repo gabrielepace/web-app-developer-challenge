@@ -10,8 +10,7 @@ app.use('/login', (req, res) => {
     });
 });
 
-var ip = require("ip");
+// Uncommented due to the Login API running on a dedicated repository on Heroku
+// const PORT = process.env.PORT || 8080;
 
-const PORT = process.env.PORT || 8080;
-
-app.listen(PORT, () => console.log(`API is running on http://${ip.address()}:${PORT}/login`));
+app.listen(PORT, () => console.log(`API is running on https://web-app-challenge-gpace-login.herokuapp.com/login`));

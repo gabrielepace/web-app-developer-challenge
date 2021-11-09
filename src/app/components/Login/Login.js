@@ -8,7 +8,6 @@ import LoginNavbar from './LoginNavbar';
 
 import '../../styles/Login.css';
 
-var ip = require("ip");
 
 const useStyles = makeStyles(theme => ({
   login: {
@@ -24,7 +23,7 @@ const useStyles = makeStyles(theme => ({
 }));
 
 async function loginUser(credentials) {
-  return fetch(`http://${ip.address()}:8080/login`, {
+  return fetch(`https://web-app-challenge-gpace-login.herokuapp.com/login`, { // Was: http://localhost:8080/login
     method: 'POST',
     headers: {
       'Content-Type': 'application/json'
