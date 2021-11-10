@@ -72,7 +72,7 @@ The web app can be viewed on a mobile OS like iOS and Android. A mobile web brow
 
 Screenshots of the web app from the iPhone SE (using Safari) with iOS 15:
 
-<img src="https://my-image-url.type" alt="Empty Login" width="320" height="568">  <img src="https://my-image-url.type" alt="Login data" width="320" height="568">
+<img src="screenshots/Simulator Screen Shot - iPhone SE (2nd generation) - 2021-11-10 at 09.44.46.png" alt="Empty Login" width="320" height="568">  <img src="screenshots/Simulator Screen Shot - iPhone SE (2nd generation) - 2021-11-10 at 09.45.17.png" alt="Login data" width="320" height="568">
 
 <img src="screenshots/Simulator Screen Shot - iPhone SE (2nd generation) - 2021-11-10 at 00.53.26.png" alt="Home Page" width="320" height="568">  <img src="screenshots/Simulator Screen Shot - iPhone SE (2nd generation) - 2021-11-10 at 00.53.37.png" alt="Films Page" width="320" height="568">
 
