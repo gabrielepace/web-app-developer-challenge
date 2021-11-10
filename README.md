@@ -72,7 +72,13 @@ The web app can be viewed on a mobile OS like iOS and Android. A mobile web brow
 
 Screenshots of the web app from the iPhone SE (using Safari) with iOS 15:
 
-<img src="https://my-image-url.type" alt="Empty Login" style="border: 2px solid black;" width="320" height="568">  <img src="https://my-image-url.type" alt="Login data" style="border: 2px solid black;" width="320" height="568">  <img src="screenshots/Simulator Screen Shot - iPhone SE (2nd generation) - 2021-11-10 at 00.53.26.png" alt="Home Page" style="border: 2px solid black;" width="320" height="568">  <img src="screenshots/Simulator Screen Shot - iPhone SE (2nd generation) - 2021-11-10 at 00.53.37.png" alt="Films Page" style="border: 2px solid black;" width="320" height="568">  <img src="screenshots/Simulator Screen Shot - iPhone SE (2nd generation) - 2021-11-10 at 00.53.57.png" alt="People Page" style="border: 2px solid black;" width="320" height="568">  <img src="screenshots/Simulator Screen Shot - iPhone SE (2nd generation) - 2021-11-10 at 00.54.18.png" alt="Sidebar" style="border: 2px solid black;" width="320" height="568">  <img src="screenshots/Simulator Screen Shot - iPhone SE (2nd generation) - 2021-11-10 at 00.55.12.png" alt="Search function" style="border: 2px solid black;" width="320" height="568">  <img src="screenshots/Simulator Screen Shot - iPhone SE (2nd generation) - 2021-11-10 at 00.55.35.png" alt="Detail Page" style="border: 2px solid black;" width="320" height="568">
+<img src="https://my-image-url.type" alt="Empty Login" width="320" height="568">  <img src="https://my-image-url.type" alt="Login data" width="320" height="568">
+
+<img src="screenshots/Simulator Screen Shot - iPhone SE (2nd generation) - 2021-11-10 at 00.53.26.png" alt="Home Page" width="320" height="568">  <img src="screenshots/Simulator Screen Shot - iPhone SE (2nd generation) - 2021-11-10 at 00.53.37.png" alt="Films Page" width="320" height="568">
+
+<img src="screenshots/Simulator Screen Shot - iPhone SE (2nd generation) - 2021-11-10 at 00.53.57.png" alt="People Page" width="320" height="568">  <img src="screenshots/Simulator Screen Shot - iPhone SE (2nd generation) - 2021-11-10 at 00.54.18.png" alt="Sidebar" width="320" height="568">
+
+<img src="screenshots/Simulator Screen Shot - iPhone SE (2nd generation) - 2021-11-10 at 00.55.12.png" alt="Search function" width="320" height="568">  <img src="screenshots/Simulator Screen Shot - iPhone SE (2nd generation) - 2021-11-10 at 00.55.35.png" alt="Detail Page" width="320" height="568">
 
 ## Local installation
 
