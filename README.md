@@ -47,29 +47,60 @@ Add a search input to search for a Star Wars resource.
 
 When a user clicks on a Star Wars resource, he gets redirected to a detail page.
 
-## Available Scripts
+## Website (hosted)
 
-In the project directory, you can run:
+**Link:** [https://web-app-developer-challenge-gabrielepace.vercel.app](https://web-app-developer-challenge-gabrielepace.vercel.app) (hosted on Vercel)
+
+The own implemented [Login API](https://web-app-challenge-gpace-login.herokuapp.com/login) is hosted on Heroku.
+
+
+## Remarks
+
+On the Login page, is it possible to insert any username resp. password, because it is not specified in the Use Case 1 to restrict it to a specific created user. Last but not least the app is not connect to a database, so any username resp. password works.
+
+After the Login, if the user e.g., closes the Tab on the web browser and opens a new one, the user remains signed in. Bonus in Use Case 1 is satisfied.
+
+All the listed Use Cases were implemented and the technical requirements were also satisfied. As frontend language it was used JavaScript (instead of TypeScript).
+
+The web app can be used in mobile devices (See supported screen sizes in Technical Requirements) as well for Desktop devices (workstations, laptops, etc.).
+
+The web app can be viewed on a mobile OS like iOS and Android. A mobile web browser installed on the smartphone (e.g., Chrome, Firefox or Safari) is required.
+
+## Screenshots
+
+Screenshots of the web app from the iPhone SE (using Safari) with iOS 15:
+
+
+## Local installation
+
+### Requirements
+
+- [Node.js](https://nodejs.org/en) v16 LTS
+- NPM (included in Node.js)
+- [Yarn] (https://yarnpkg.com)
+
+It is possible to install in OS like Windows, macOS and Linux distributions e.g. Ubuntu.
+
+### Available Scripts
+
+### `yarn install`
+
+Installs all the app dependencies resp. libraries.
 
 ### `yarn start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Runs the app in the development mode. Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `yarn test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
 ### `yarn build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Builds the app for production to the `build` folder. It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Installation Guide
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1. After that the Requirements are satisfied, download this GitHub Repository (click on the download button).
+2. Extract the *.zip file and open a CLI (Terminal) inside the extracted folder. You can use `cd /path/` (path of the downloaded folder).
+3. Run `yarn install` and finally `yarn start`. IMPORTANT: do not close the Terminal, otherwise the app process will close.
+4. Open a web browser and go to [http://localhost:3000](http://localhost:3000).
+
+To close the app, go to the Terminal were the app process is running and type on the keyboard `Ctrl` + `C`.
