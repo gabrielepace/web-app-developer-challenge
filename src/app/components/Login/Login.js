@@ -76,7 +76,7 @@ export default function Login({ setToken }) {
         <div>
           <br />
           <Button type="submit" variant="contained" color="primary">
-            Signup
+            Sign in
           </Button>
         </div>
       </form>

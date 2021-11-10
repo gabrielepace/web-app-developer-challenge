@@ -60,6 +60,8 @@ On the Login page, is it possible to insert any username resp. password, because
 
 After the Login, if the user e.g., closes the Tab on the web browser and opens a new one, the user remains signed in. Bonus in Use Case 1 is satisfied.
 
+A Logout function is also available.
+
 All the listed Use Cases were implemented and the technical requirements were also satisfied. As frontend language it was used JavaScript (instead of TypeScript).
 
 The web app can be used in mobile devices (See supported screen sizes in Technical Requirements) as well for Desktop devices (workstations, laptops, etc.).
@@ -70,6 +72,7 @@ The web app can be viewed on a mobile OS like iOS and Android. A mobile web brow
 
 Screenshots of the web app from the iPhone SE (using Safari) with iOS 15:
 
+<img src="https://my-image-url.type" alt="Empty Login" style="border: 2px solid black;" width="320" height="568">  <img src="https://my-image-url.type" alt="Login data" style="border: 2px solid black;" width="320" height="568">  <img src="screenshots/Simulator Screen Shot - iPhone SE (2nd generation) - 2021-11-10 at 00.53.26.png" alt="Home Page" style="border: 2px solid black;" width="320" height="568">  <img src="screenshots/Simulator Screen Shot - iPhone SE (2nd generation) - 2021-11-10 at 00.53.37.png" alt="Films Page" style="border: 2px solid black;" width="320" height="568">  <img src="screenshots/Simulator Screen Shot - iPhone SE (2nd generation) - 2021-11-10 at 00.53.57.png" alt="People Page" style="border: 2px solid black;" width="320" height="568">  <img src="screenshots/Simulator Screen Shot - iPhone SE (2nd generation) - 2021-11-10 at 00.54.18.png" alt="Sidebar" style="border: 2px solid black;" width="320" height="568">  <img src="screenshots/Simulator Screen Shot - iPhone SE (2nd generation) - 2021-11-10 at 00.55.12.png" alt="Search function" style="border: 2px solid black;" width="320" height="568">  <img src="screenshots/Simulator Screen Shot - iPhone SE (2nd generation) - 2021-11-10 at 00.55.35.png" alt="Detail Page" style="border: 2px solid black;" width="320" height="568">
 
 ## Local installation
 
@@ -77,7 +80,7 @@ Screenshots of the web app from the iPhone SE (using Safari) with iOS 15:
 
 - [Node.js](https://nodejs.org/en) v16 LTS
 - NPM (included in Node.js)
-- [Yarn] (https://yarnpkg.com)
+- [Yarn](https://yarnpkg.com)
 
 It is possible to install in OS like Windows, macOS and Linux distributions e.g. Ubuntu.
 
